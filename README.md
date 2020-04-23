@@ -26,7 +26,7 @@ Once you have it working in the console, write an event listener that will use t
 
 **YOUR NOTES**
 ```
-
+<!-- * best practice is to make functions that work on a broad scale after working out one case manually. Don't write the whole code out for each step and waste time. Get the 'literal' code working for one piece and thenrefactor -->
 ```
 
 ## Deliverable 2: Create Player

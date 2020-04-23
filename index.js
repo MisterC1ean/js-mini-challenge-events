@@ -1,15 +1,15 @@
 /***** Beginning of Starter Code ****/
 
-const playerContainer = document.querySelector(".player-container")
+const playerContainer = document.querySelector(".player-container");
 
 // render one player to the DOM
 function renderPlayer(player) {
   // create an element for the outer div
-  const playerDiv = document.createElement("div")
+  const playerDiv = document.createElement("div");
 
   // set attributes on the outer div
-  playerDiv.className = "player"
-  playerDiv.dataset.number = player.number
+  playerDiv.className = "player";
+  playerDiv.dataset.number = player.number;
 
   // use innerHTML to create any child elements of the div
   playerDiv.innerHTML = `
@@ -17,30 +17,33 @@ function renderPlayer(player) {
     <img src="${player.photo}" alt="${player.name}">
     <p class="likes">${player.likes} likes</p>
     <button class="like-button">❤️</button>
-  `
+  `;
 
   // append the element to the container
-  playerContainer.append(playerDiv)
+  playerContainer.append(playerDiv);
 }
 
 // for each player in the array, render to the DOM
-PLAYERS.forEach(renderPlayer)
+PLAYERS.forEach(renderPlayer);
 
 /***** End of Starter Code ****/
-
-
-
 
 /***** Deliverable 1 *****/
 function toggleColor(element) {
   if (element.style.color === "red") {
-    element.style.color = "black"
+    element.style.color = "black";
   } else {
-    element.style.color = "red"
+    element.style.color = "red";
   }
 }
-
-
+const header = document.getElementById("header");
+  header.addEventListener("click", function (event) {
+  toggleColor(event.target);
+});
 /***** Deliverable 2 *****/
-
+const addPlayerButton = document.getElementsByTagName("input")[4]
+addPlayerButton.addEventListener("click", function(e){
+  e.preventDefault();
+  console.log(e.target)
+})
 /***** Deliverable 3 *****/
